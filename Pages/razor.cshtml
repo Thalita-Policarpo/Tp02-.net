@@ -1,0 +1,38 @@
+﻿@page "/"
+@model razorModel
+@{
+    ViewData["Title"] = "Pagina de pessoas";
+}
+
+<div class="text-center">
+    <table class = "table">
+        <thead>
+            <th>
+                Nome
+            </th>
+            <th>
+                Idade
+            </th>
+            <th>
+                Pessoa
+            </th>
+        </thead>
+        <tbody>
+            @foreach (var pessoa in Model.pessoas)
+            {
+                <tr>
+                    <td>
+                        @pessoa.Nome
+                    </td>
+                    <td>
+                        @pessoa.Idade
+                    </td>
+                    <td>
+                        @pessoa.Cpf
+                    </td>
+
+                </tr>
+            } 
+        </tbody>
+    </table>
+</div>
