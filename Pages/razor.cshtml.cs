@@ -14,9 +14,9 @@ namespace Tp02_.net.Pages
             {
                 pessoas.Add(new Pessoa
                 {
-                    Nome = $"nome {i}",
-                    Idade = i * 10,
-                    Cpf = $"{i + 1}{i + 2}{i + 3}"
+                    Nome = $"Pessoa {i}",
+                    Idade = i + 18,
+                    Cpf = $"{i * 98754321}"
                 });
             }
         }
